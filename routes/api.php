@@ -16,3 +16,6 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('/upload/image', ['uses' => 'ApiController@uploadImage', 'as' => 'api.upload.image']);
+Route::get('/data/{slug}', ['uses' => 'ApiController@dataApi', 'as' => 'api.data']);

@@ -231,3 +231,13 @@ footer {
   }
 }
 
+// 验证码样式
+#geetest-captcha {
+  margin: 10px 0;
+  .geetest_holder, .geetest_wind, .geetest_wait_compute, .geetest_detect {
+    width: 100% !important;
+  }
+}
+.geetest_copyright_tip, .geetest_logo, .geetest_feedback {
+  display: none;
+}

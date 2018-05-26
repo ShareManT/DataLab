@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Log;
 use App\Project;
 use App\User;
 use Illuminate\Http\Request;
@@ -32,7 +33,7 @@ class ProjectController extends Controller
     {
         $project = Project::where('display', 1)->where('slug', $slug)->first();
         if ($project) {
-            $count = User::where('loginCounts', '<>', '0')->get()->sum('loginCounts');
+            $count = Log::where('type', 'Library2017')->get()->sum('loginCounts');
             return view('project.auth', compact('project', 'count'));
         }
         return '没有对应的项目授权页，请检查。';
@@ -44,11 +45,14 @@ class ProjectController extends Controller
         $user = User::where('stuId', $request->input('stuId'))->where('name', $request->input('name'))->first();
         if ($user) {
             session(['authId' => $user->stuId]);
-            User::where('stuId', $user->stuId)->update(['loginIP' => $_SERVER["REMOTE_ADDR"]]);
-            User::where('stuId', $user->stuId)->increment('loginCounts');
+            $log = Log::updateOrCreate(['stuId' => $user->stuId, 'type' => $project->slug], ['name' => $user->name, 'loginIP' => $_SERVER["REMOTE_ADDR"]]);
+            if ($log) {
+                Log::where('stuId', $user->stuId)->where('type', $project->slug)->increment('loginCounts', 1);
+            }
             return redirect()->route('project.view.main', $project->slug)->with('notify', '授权成功，您的数据报告已生成');
         } else {
-            return back()->withInput()->with('notify', '2017，你未在图书馆留下足迹！何谈回忆？');
+            Log::updateOrCreate(['stuId' => '-' . $request->input('stuId')], ['type' => $slug, 'name' => $request->input('name'), 'loginIP' => $_SERVER["REMOTE_ADDR"], 'memo' => '无效账号']);
+            return back()->withInput()->with('notify', '你的学号/工号有误或未录入！');
         }
     }
 
@@ -67,7 +71,7 @@ class ProjectController extends Controller
                 $timeDatas = DB::table('libraryTimeDatas')->where('id', $id)->first();
                 $relationDatas = DB::table('libraryRelationDatas')->where('id', $id)->orderBy('percent', 'desc')->get();
                 $firstEnterData = DB::table('libraryEnterRecords')->where('id', $id)->orderBy('date', 'asc')->orderBy('time', 'asc')->first();
-                return view('project.view.' . $slug . '.main', compact('project', 'borrowDatas', 'resultDatas', 'enterDatas', 'timeDatas', 'relationDatas','firstEnterData'));
+                return view('project.view.' . $slug . '.main', compact('project', 'borrowDatas', 'resultDatas', 'enterDatas', 'timeDatas', 'relationDatas', 'firstEnterData'));
             }
             return '没有匹配的项目视图数据控制器';
         }

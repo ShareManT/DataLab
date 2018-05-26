@@ -12,7 +12,7 @@
 */
 Auth::routes();
 
-Route::post('/api/upload/image', ['uses' => 'ApiController@uploadImage', 'as' => 'api.upload.image']);
+// API
 Route::get('/home', ['uses' => 'AppController@home', 'as' => 'home'])->middleware('auth');
 
 // Post

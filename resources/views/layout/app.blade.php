@@ -11,9 +11,10 @@
     <link rel="stylesheet" type="text/css" href="{{mix('/css/app.css')}}">
     <link rel="stylesheet" type="text/css" href="{{mix('/css/packages.css')}}">
     @yield('header')
+    <script type="text/javascript" src="{{mix('/js/packages.js')}}"></script>
     <script>
         var _hmt = _hmt || [];
-        (function() {
+        (function () {
             var hm = document.createElement("script");
             hm.src = "https://hm.baidu.com/hm.js?ca626f87275090d71ff21c6ebfb820c1";
             var s = document.getElementsByTagName("script")[0];
@@ -33,7 +34,6 @@
 <footer>
     @include('layout.footer')
 </footer>
-<script type="text/javascript" src="{{mix('/js/packages.js')}}"></script>
 <script>
     $(document).ready(function () {
         $(".activeArea").hover(function () {

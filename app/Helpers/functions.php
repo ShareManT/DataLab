@@ -6,7 +6,7 @@ if (!function_exists('getCdn')) {
     function getCdn()
     {
         if (env('QINIU_CUSTOM_DOMAIN')) {
-            return '//' . env('QINIU_CUSTOM_DOMAIN').'/';
+            return 'http://' . env('QINIU_CUSTOM_DOMAIN').'/';
         } else {
             return "[CDN未配置]";
         }

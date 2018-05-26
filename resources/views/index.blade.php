@@ -16,10 +16,10 @@
     <script>
         $(document).ready(function () {
             $('body').backstretch([
-                "http:{{getCdn().'cover/cover1.jpg'}}",
-                "http:{{getCdn().'cover/cover2.jpg'}}",
-                "http:{{getCdn().'cover/cover3.jpg'}}",
-                "http:{{getCdn().'cover/cover5.jpg'}}"
+                "{{getCdn().'cover/cover1.jpg'}}",
+                "{{getCdn().'cover/cover2.jpg'}}",
+                "{{getCdn().'cover/cover3.jpg'}}",
+                "{{getCdn().'cover/cover5.jpg'}}"
             ], {
                 fade: 800,
                 duration: 2600

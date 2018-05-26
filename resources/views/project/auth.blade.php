@@ -1,7 +1,7 @@
 @extends('layout.app')
 @section('header')
     <style>footer {
-            display: none;
+            display: none !important;
         }</style>
 @endsection
 @section('content')
@@ -27,6 +27,7 @@
             <div style="margin: 10px 0;border: 2px solid #cccccc;font-size: 0.85rem;border-radius: 5px;padding: 10px;color: #999999;">
                 {{$project->copyright}}
             </div>
+            {!! Geetest::render('popup') !!}
             <button class="mdui-btn mdui-btn-block mdui-color-indigo-accent mdui-ripple" type="submit"><i
                         class="mdui-icon material-icons">check</i> 授权开启我的数据报告
             </button>
