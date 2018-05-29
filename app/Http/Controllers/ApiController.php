@@ -105,6 +105,7 @@ class ApiController extends Controller
                 ]
             ];
             $personResultData = DB::table('MealCardPersonResult')->where('id', $request->get('id'))->where('name', $request->get('name'))->first();
+            $personDealType = DB::table('MealCardDealType')->select('type', 'money')->where('id', $request->get('id'))->where('name', $request->get('name'))->get();
             $personMonthData = DB::table('MealCardPersonMonth')->select('month', 'money')->where('id', $request->get('id'))->where('name', $request->get('name'))->get();
             $personBreakfast = DB::table('MealCardBreakfast')->select('site', 'count')->where('id', $request->get('id'))->where('name', $request->get('name'))->get();
             $personBrunch = DB::table('MealCardBrunch')->select('site', 'count')->where('id', $request->get('id'))->where('name', $request->get('name'))->get();
@@ -112,12 +113,13 @@ class ApiController extends Controller
             $personAfternoon = DB::table('MealCardAfternoon')->select('site', 'count')->where('id', $request->get('id'))->where('name', $request->get('name'))->get();
             $personDinner = DB::table('MealCardDinner')->select('site', 'count')->where('id', $request->get('id'))->where('name', $request->get('name'))->get();
             $personNight = DB::table('MealCardNight')->select('site', 'count')->where('id', $request->get('id'))->where('name', $request->get('name'))->get();
+            $personGap = DB::table('MealCardGap')->select('days', 'start', 'end')->where('id', $request->get('id'))->where('name', $request->get('name'))->first();
             $executeTime = microtime(true) - $timeStart;
             if ($personResultData) {
                 $json = [
                     "status" => 'success',
                     "msg" => "接口数据获取成功!",
-                    "time" => $executeTime.'s',
+                    "time" => $executeTime,
                     "data" =>
                         [
                             'school' =>
@@ -128,13 +130,15 @@ class ApiController extends Controller
                             'person' =>
                                 [
                                     'result' => $personResultData,
+                                    'dealType' => $personDealType,
                                     'monthTotalResume' => $personMonthData,
                                     'personBreakfast' => $personBreakfast,
                                     'personBrunch' => $personBrunch,
-                                    'personLunch ' => $personLunch,
+                                    'personLunch' => $personLunch,
                                     'personAfternoon' => $personAfternoon,
                                     'personDinner' => $personDinner,
-                                    'personNight' => $personNight
+                                    'personNight' => $personNight,
+                                    'personGap' => $personGap
                                 ]
                         ]
                 ];

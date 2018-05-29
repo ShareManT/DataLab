@@ -1,0 +1,1465 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.right {
+    z-index: 1200 !important;
+    right: 0.17rem !important;
+}
+
+#fp-nav {
+    top: 40% !important;
+    left: 5.8rem !important;
+}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span {
+    background: #fff !important; /*这里设置的是活动导航的颜色*/
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    border: 1px solid rgb(199, 193, 193) !important; /*这里设置的是非活动导航的颜色*/
+}
+
+.wrap {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    max-width: 6.4rem;
+    height: 100%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+/*音乐图标样式部分*/
+
+#audio-btn {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0 auto;
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: 1000;
+    right: 0.3rem;
+    top: 5%;
+}
+
+.on {
+    background: url('https://cdn.soujincheng.com/img/music_on.png') no-repeat 0 0;
+    -webkit-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+}
+
+.off {
+    background: url('https://cdn.soujincheng.com/img/music_off.png') no-repeat 0 0;
+}
+
+@-webkit-keyframes rotating {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotating {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/*第一版的内容*/
+
+.cgf-Bed-bg {
+    background: url(https://cdn.soujincheng.com/img/toBed.png) no-repeat;
+    background-size: 100%;
+}
+
+.container1 {
+    top: 30%;
+    left: 1.6rem;
+    position: absolute;
+    width: 4.8rem;
+    /* height: 30vh; */
+    /*border:1px solid #fff;*/
+}
+
+.move_img {
+    /*background: url('https://cdn.soujincheng.com/img/music_on.png') no-repeat 0 0;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: rotating 6s linear infinite;
+    animation: move 6s linear infinite;
+}
+
+@keyframes move {
+    from {
+        -webkit-transform: translate(0, 0) rotateX(0deg);
+        -moz-transform: translate(0, 0) rotateX(0deg);
+        -ms-transform: translate(0, 0) rotateX(0deg);
+        -o-transform: translate(0, 0) rotateX(0deg);
+        transform: translate(0, 0) rotateX(0deg);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: translate(5.4rem, 812px) rotateX(360deg);
+        -moz-transform: translate(5.4rem, 812px) rotateX(360deg);
+        -ms-transform: translate(5.4rem, 812px) rotateX(360deg);
+        -o-transform: translate(5.4rem, 812px) rotateX(360deg);
+        transform: translate(5.4rem, 812px) rotateX(360deg);
+        opacity: 1;
+    }
+}
+
+@media screen and (min-height: 668px) and (max-height: 882px) {
+    .container1 {
+        top: 30%;
+        /* left: 1.6rem; */
+        position: absolute;
+        /* width: 5.3rem; */
+        /* height: 30vh; */
+        /*border:1px solid #fff;*/
+    }
+}
+
+@media screen and (min-width: 641px) {
+    .container1 {
+        top: 45%;
+        /* left: 1.2rem; */
+        position: absolute;
+        /* width: 5.3rem; */
+        /* height: 30vh; */
+        /*border:1px solid #fff;*/
+    }
+}
+
+/* .title_one {
+    color: #fff;
+    font-size: 0.3rem;
+    letter-spacing: 0.03rem;
+    width: 4.6rem;
+    position: absolute;
+    left: 0.9rem;
+    top: 0;
+} */
+
+/* .title_two {
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    font-size: 0.3rem;
+    letter-spacing: 0.03rem;
+    left: 1.1rem;
+} */
+
+/* .title_three {
+    width: 2.7rem;
+    color: #fff;
+    position: absolute;
+    top: 55%;
+    font-size: 0.3rem;
+    letter-spacing: 0.03rem;
+    left: 2.6rem;
+} */
+
+/* .title_four {
+    color: #fff;
+    position: absolute;
+    top: 75%;
+    width: 4.6rem;
+    font-size: 0.3rem;
+    letter-spacing: 0.03rem;
+    left: 0.7rem; */
+/**/
+/* } */
+
+/* .wheather {
+    display: inline-block;
+    color: #facf91;
+    margin-left: 0.02rem;
+    margin-right: 0.02rem;
+} */
+
+.cgf-two-bg {
+    width: 6.4rem;
+    height: 100%;
+    background: url(https://cdn.soujincheng.com/img/shou2.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    opacity: 0.6;
+}
+
+/*第二栏 晚睡*/
+
+.cgf-sleep-bg {
+    background: url(https://cdn.soujincheng.com/img/sleepLate.png) no-repeat;
+    background-size: 100%;
+}
+
+.container2 {
+    position: absolute;
+    top: 24%;
+    left: 0.3rem;
+    right: 0.3rem;
+    /* width: 6rem; */
+    /* height: 30vh; */
+    /* border: 1px solid #fff;*/
+}
+
+@media screen and (min-height: 668px) and (max-height: 882px) {
+    .container2 {
+        top: 25%;
+        /* width: 6rem; */
+        /* height: 30vh; */
+        /* border: 1px solid #fff;*/
+    }
+}
+
+@media screen and (min-width: 641px) {
+    .container2 {
+        top: 40%;
+        left: 0.3rem;
+        position: absolute;
+        width: 6rem;
+        /* height: 30vh; */
+        /*border: 1px solid #fff;*/
+    }
+}
+
+/* .title_one_sleep {
+    color: #fff;
+    font-size: 0.3rem;
+    letter-spacing: 0.03rem;
+    width: 4.3rem; */
+/* position: absolute;
+left: 1.5rem; */
+/* top: 0; */
+/**/
+/* } */
+
+/* .title_two_sleep {
+    color: #fff;
+    font-size: 0.3rem;
+    letter-spacing: 0.03rem; */
+/* width: 3rem; */
+/* position: absolute;
+left: 2.8rem; */
+/* top: 20%; */
+/**/
+/* } */
+
+/* .title_three_sleep {
+    color: #fff;
+    font-size: 0.3rem;
+    letter-spacing: 0.03rem; */
+/* width: 3.2rem;
+position: absolute; */
+/* left: 0;
+top: 50%; */
+/**/
+/* } */
+
+.title_four_sleep {
+    color: #fff;
+    font-size: 0.3rem;
+    letter-spacing: 0.03rem;
+    /* width: 4.9rem; */
+    /* position: absolute;
+    left: 0; */
+    top: 70%;
+    /**/
+}
+
+/*第三栏 消费*/
+
+.cgf-cost-bg {
+    background: url(https://cdn.soujincheng.com/img/cost.png) no-repeat;
+    background-size: 100%;
+}
+
+.container3 {
+    height: 30%;
+    position: absolute;
+    top: 15%;
+    left: 0.3rem;
+    right: 0.3rem;
+}
+
+@media screen and (min-width: 641px) {
+    .container3 {
+        /* width: 6.4rem; */
+        height: 60%;
+        /*border: 1px solid #fff;*/
+        /* position: absolute; */
+        top: 10%;
+        /* left: 0; */
+    }
+}
+
+.title_one_cost {
+    color: #fff;
+    font-size: 0.3rem;
+    letter-spacing: 0.01rem;
+    /* width: 3.1rem; */
+    /* position: absolute;
+    top: 0;
+    left: 0.3rem; */
+    /**/
+}
+
+.title_two_cost {
+    color: #fff;
+    font-size: 0.3rem;
+    letter-spacing: 0.01rem;
+    /* width: 4.9rem;
+    position: absolute;
+    left: 0.3rem;
+    top: 15%; */
+    /**/
+}
+
+.title_three_cost {
+    color: #fff;
+    font-size: 0.3rem;
+    letter-spacing: 0.01rem;
+    /* width: 3.1rem;
+    position: absolute;
+    left: 0.3rem;
+    top: 40%; */
+    /**/
+}
+
+.title_four_cost {
+    color: #fff;
+    font-size: 0.3rem;
+    letter-spacing: 0.01rem;
+    /* width: 6.2rem;
+    position: absolute;
+    left: 0.3rem;
+    top: 55%; */
+    /**/
+}
+
+.title_five_cost {
+    color: #fff;
+    font-size: 0.3rem;
+    letter-spacing: 0.01rem;
+    /* width: 3.1rem; */
+    /**/
+    /* position: absolute;
+    left: 0.3rem;
+    top: 70%; */
+}
+
+/*第四栏 地点*/
+.cgf-position-bg {
+    background: url(https://cdn.soujincheng.com/img/position.png) no-repeat;
+    background-size: 100%;
+}
+
+.container4 {
+    width: 5rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+
+.position-text {
+    /**/
+    height: 30%;
+    width: 6.4rem;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 0;
+}
+
+.container4-two, .container4-four {
+    width: 6rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    /*border:1px solid #fff;*/
+    background: url(https://cdn.soujincheng.com/img/position-bg.png);
+    background-size: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.container4-two {
+    top: 23%;
+}
+
+.container4-four {
+    top: 55%;
+}
+
+.container4-two > div, .container4-four > div {
+    height: 100%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.go-times {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.title_one_position {
+    color: #fff;
+    font-size: 0.3rem;
+    letter-spacing: 0.03rem;
+    width: 4.9rem;
+    position: absolute;
+    left: 0rem;
+    top: 15%;
+    /**/
+}
+
+.title_two_position {
+    color: #fff;
+    font-size: 0.3rem;
+    letter-spacing: 0.03rem;
+    width: 6rem;
+    position: absolute;
+    left: 0rem;
+    top: 35%;
+    /**/
+}
+
+/*第五栏 消费组成*/
+
+.cgf-costComponent-bg {
+    background: url(https://cdn.soujincheng.com/img/costComponent.png) no-repeat;
+    background-size: 100%;
+}
+
+.container5 {
+    width: 5.2rem;
+    margin: 0 auto;
+    /**/
+    height: 8%;
+    position: absolute;
+    left: 0.6rem;
+    top: 5%;
+}
+
+.title-component-bg-one {
+    color: black;
+    font-size: 0.3rem;
+    letter-spacing: 0.03rem;
+    width: 4.9rem;
+    position: absolute;
+    left: 0.3rem;
+    top: 0;
+    /**/
+}
+
+.title-component-bg-two {
+    color: black;
+    font-size: 0.3rem;
+    letter-spacing: 0.03rem;
+    width: 4.9rem;
+    position: absolute;
+    left: 0.3rem;
+    top: 25%;
+}
+
+.components-site {
+    width: 5.2rem;
+    height: 60%;
+    position: absolute;
+    top: 12%;
+    left: 0.6rem;
+}
+
+/* .components-site p {
+    text-align: center;
+}
+
+.components-site p:nth-child(2n-1) {
+    line-height: 1rem;
+    color: #fff;
+}
+
+.components-site p:nth-child(2n) {
+    line-height: 0rem;
+} */
+
+.site-one,
+.site-two,
+.site-three,
+.site-four,
+.site-five,
+.site-six {
+    width: 1.4rem;
+    height: 1.4rem;
+    /*border:1px solid black;*/
+    border-radius: 50%;
+}
+
+.site-one {
+    background: rgb(90, 197, 90);
+    position: absolute;
+    left: 0.3rem;
+    top: 0.3rem;
+}
+
+.site-two {
+    background: rgb(209, 74, 180);
+    position: absolute;
+    left: 1.9rem;
+    top: 0.3rem;
+}
+
+.site-three {
+    background: rgb(112, 112, 226);
+    position: absolute;
+    left: 3.5rem;
+    top: 0.3rem;
+}
+
+.site-four {
+    background: rgb(112, 112, 34);
+    position: absolute;
+    left: 0.3rem;
+    top: 3.2rem;
+}
+
+.site-five {
+    background: rgb(12, 112, 226);
+    position: absolute;
+    left: 1.9rem;
+    top: 3.2rem;
+}
+
+.site-six {
+    background: rgb(223, 159, 170);
+    position: absolute;
+    left: 3.5rem;
+    top: 3.2rem;
+}
+
+/*第六栏 假期*/
+.cgf-vacation-bg {
+    background: url(https://cdn.soujincheng.com/img/vacation.png) no-repeat;
+    background-size: 100%;
+}
+
+.container6 {
+    width: 6rem;
+    height: 25%;
+    /**/
+    position: absolute;
+    top: 10%;
+    left: 0.2rem;
+}
+
+.no-card {
+    color: #facf91;
+    font-size: 0.35rem;
+}
+
+.vc-one {
+    text-align: center;
+    font-size: 0.3rem;
+    margin: 10px;
+    color: #fff;
+    letter-spacing: 0.03rem;
+}
+
+.vc-two {
+    letter-spacing: 0.03rem;
+    font-size: 0.3rem;
+    color: #fff;
+    position: absolute;
+    left: 0.6rem;
+    top: 70%;
+}
+
+.vc-three {
+    width: 4rem;
+    /*border:1px solid yellow;*/
+    letter-spacing: 0.03rem;
+    font-size: 0.3rem;
+    color: #fff;
+    position: absolute;
+    left: 0.6rem;
+    top: 90%;
+}
+
+/*第七栏 院系消费*/
+
+.cgf-collageCost-bg {
+    background: url(https://cdn.soujincheng.com/img/collageCost.png) no-repeat;
+    background-size: 100%;
+}
+
+.over-same, .over-all, .night, .range-all {
+    color: #1d80e1;
+
+}
+
+.title-collageCost-bg-one {
+    color: black;
+    font-size: 0.3rem;
+    letter-spacing: 0.03rem;
+    width: 4.9rem;
+    position: absolute;
+    left: 0.3rem;
+    top: 0;
+    /**/
+}
+
+.title-collageCost-bg-two {
+    color: black;
+    font-size: 0.3rem;
+    letter-spacing: 0.03rem;
+    width: 4.9rem;
+    position: absolute;
+    left: 0.3rem;
+    top: 10%;
+}
+
+/*第八栏 月份消费*/
+
+.cgf-costMoth-bg {
+    background: url(https://cdn.soujincheng.com/img/costEveryMonth.png) no-repeat;
+    background-size: 100%;
+}
+
+.container8 {
+    width: 5.2rem;
+    margin: 0 auto;
+    font-size: 22px;
+    line-height: 35px;
+    height: 10%;
+    color: #fff;
+    position: absolute;
+    left: 0.3rem;
+    top: 5%;
+}
+
+.datePiceker {
+    width: 6rem;
+    height: 40%;
+    /*border:1px solid black;*/
+    display: flex;
+    position: absolute;
+    top: 16%;
+    left: 0.2rem;
+
+}
+
+.dateTable {
+    padding: 0;
+    width: 6rem;
+    height: 100%;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 3px 3px 3px gray;
+}
+
+.one-cost, .two-cost, .three-cost {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 33%;
+}
+
+.dateTable > div > div {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #efefef;
+}
+
+.moth-cost {
+    font-size: 20px;
+    margin-bottom: 4px;
+    color: #1f74c9;
+}
+
+/*第九栏 关系链*/
+.cgf-connection-bg {
+    background: url(https://cdn.soujincheng.com/img/connection.png) no-repeat;
+    background-size: 100%;
+}
+
+.cgf-connection-bg .container > p {
+    color: #fff;
+    font-size: 0.307199738rem;
+    letter-spacing: 0.03rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.5;
+}
+
+.cgf-connection-bg .title {
+    position: absolute;
+    top: 0.170666521rem;
+    left: 0.170666521rem;
+    font-size: 0.273066434rem;
+    color: #fff;
+}
+
+.cgf-connection-bg .detail-btn {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #eee;
+    font-size: 0.307199738rem;
+}
+
+.container-one-9 {
+    width: 5.4rem;
+    height: 18%;
+    background: url(https://cdn.soujincheng.com/img/connection1.png) no-repeat;
+    background-size: 100%;
+    overflow: scroll;
+    position: absolute;
+    left: 0.3rem;
+    top: 3%;
+
+}
+
+.cgf-connection-bg .container {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-two-9 {
+    width: 5.4rem;
+    height: 2.09708736rem;
+    background: url(https://cdn.soujincheng.com/img/max-heatMap.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    /* overflow: scroll; */
+    /* position:absolute;
+    left:0.3rem;
+    top:24%; */
+
+}
+
+.container-three-9 {
+    width: 5.4rem;
+    height: 2.09708736rem;
+    margin-top: 0.349726164rem;
+    /**/
+    background: url(https://cdn.soujincheng.com/img/min-heatMap.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    /* overflow: scroll; */
+    /* position:absolute;
+    left:0.3rem;
+    top:45%; */
+
+}
+
+/*第十栏 消费属性*/
+
+.cgf-costAttr-bg {
+    position: relative;
+    background: url(https://cdn.soujincheng.com/img/container10.png) no-repeat;
+    background-size: 100%;
+}
+
+@media screen and (min-width: 641px) {
+    .container10 {
+        width: 6.4rem;
+        height: 28%;
+        /**/
+        /* position:absolute; */
+        /* top:34%; */
+        /* left:0.4rem; */
+    }
+}
+
+.container10 {
+    width: 6.4rem;
+    /* width:5.8rem; */
+    height: 25%;
+    /**/
+    position: absolute;
+    top: 3rem;
+    /* left:0.2rem; */
+}
+
+/*678*/
+@media only screen and (device-width: 375px) and (device-height: 667px) {
+    .container10 {
+        width: 6.4rem;
+        height: 25%;
+        /**/
+        position: absolute;
+        /* top:2.9rem; */
+        /* left:0.4rem; */
+    }
+}
+
+/*678s*/
+@media screen and (device-width: 414px) {
+    .container10 {
+        width: 6.4rem;
+        height: 28%;
+        /**/
+        position: absolute;
+        /* top: 2.9rem; */
+        /* left:0.4rem; */
+    }
+}
+
+/*x*/
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    .container10 {
+        width: 6.4rem;
+        height: 25%;
+        /**/
+        position: absolute;
+        /* top:20%; */
+        /* left:0.4rem; */
+    }
+}
+
+.cgf-costAttr-bg .keyword-img {
+    position: absolute;
+    width: 5.696rem;
+    top: 0.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.8), 5px 0 20px -5px rgba(0, 0, 0, 0.8);
+
+}
+
+.eat-thing {
+    text-align: center;
+    font-size: 0.511999563rem;
+    /*border:1px solid black;*/
+    color: #003b58;
+    font-weight: bolder;
+}
+
+.desc {
+    width: 5.7rem;
+    height: 15%;
+    color: #003b58;
+    font-weight: bolder;
+    font-size: 12px;
+    position: absolute;
+    top: 65%;
+    left: 0.3rem;
+}
+
+/*第十一栏 总帐单*/
+.cgf-all-bg {
+    background: url(https://cdn.soujincheng.com/img/allSheet.png) no-repeat;
+    background-size: 100%;
+}
+
+.container11 {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 10%;
+}
+
+/*x*/
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    .container11 {
+        height: 40%;
+        position: absolute;
+        top: 8%;
+    }
+}
+
+/*第十二栏 结束页*/
+.cgf-end-bg {
+    background: url(https://cdn.soujincheng.com/img/end.png) no-repeat;
+    background-size: 100%;
+}
+
+.once-watch {
+    display: block;
+    width: 3rem;
+    height: 0.8rem;
+    /* background:url(https://cdn.soujincheng.com/img/); */
+    /*  */
+    cursor: pointer;
+    outline: 0;
+    position: absolute;
+    top: 2.3rem;
+    left: 1.7rem;
+}
+
+.share-btn {
+    width: 3.1rem;
+    height: 0.85rem;
+    position: absolute;
+    left: 1.7rem;
+    top: 5.9rem;
+}
+
+.share-friend-btn {
+    width: 3.1rem;
+    height: 0.85rem;
+    position: absolute;
+    left: 1.7rem;
+    top: 6.9rem;
+}
+
+/*第十三栏 食堂高峰*/
+.cgf-mp-bg {
+    background: url(https://cdn.soujincheng.com/img/team.png) no-repeat;
+    background-size: 100%;
+}
+
+.hint-text {
+    color: #666666 !important;
+    font-size: 14px !important;
+    line-height: 18px;
+}
+
+.loader {
+    background: #fff3e0;
+    background: linear-gradient(90deg, #FF4E50 10%, #F9D423 90%);
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.loader-inner {
+    bottom: 0;
+    height: 60px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+
+.loader-line-wrap {
+    -webkit-animation:
+            spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite
+;
+    animation:
+            spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite
+;
+    box-sizing: border-box;
+    height: 50px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    width: 100px;
+}
+.loader-line {
+    border: 4px solid transparent;
+    border-radius: 100%;
+    box-sizing: border-box;
+    height: 100px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+.loader-line-wrap:nth-child(1) { -webkit-animation-delay: -50ms; animation-delay: -50ms; }
+.loader-line-wrap:nth-child(2) { -webkit-animation-delay: -100ms; animation-delay: -100ms; }
+.loader-line-wrap:nth-child(3) { -webkit-animation-delay: -150ms; animation-delay: -150ms; }
+.loader-line-wrap:nth-child(4) { -webkit-animation-delay: -200ms; animation-delay: -200ms; }
+.loader-line-wrap:nth-child(5) { -webkit-animation-delay: -250ms; animation-delay: -250ms; }
+
+.loader-line-wrap:nth-child(1) .loader-line {
+    border-color: #ffffff;
+    height: 90px;
+    width: 90px;
+    top: 7px;
+}
+.loader-line-wrap:nth-child(2) .loader-line {
+    border-color: #ffffff;
+    height: 76px;
+    width: 76px;
+    top: 14px;
+}
+.loader-line-wrap:nth-child(3) .loader-line {
+    border-color: #ffffff;
+    height: 62px;
+    width: 62px;
+    top: 21px;
+}
+.loader-line-wrap:nth-child(4) .loader-line {
+    border-color: #ffffff;
+    height: 48px;
+    width: 48px;
+    top: 28px;
+}
+.loader-line-wrap:nth-child(5) .loader-line {
+    border-color: #ffffff;
+    height: 34px;
+    width: 34px;
+    top: 35px;
+}
+
+@-webkit-keyframes spin {
+    0%, 15% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0%, 15% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@charset "UTF-8";
+.container1 p, .container2 p {
+    line-height: 1.2;
+}
+
+/* 第一段 */
+.container1 p {
+    color: #fff;
+    font-size: 0.3rem;
+    letter-spacing: 0.03rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.5;
+}
+
+.container1 p span.highlight {
+    color: #facf91;
+    margin-left: 0.02rem;
+    margin-right: 0.02rem;
+}
+
+/* 第二段 */
+.container2 p {
+    color: #fff;
+    font-size: 0.3rem;
+    letter-spacing: 0.03rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.5;
+}
+
+.container2 p span.highlight {
+    color: #facf91;
+    margin-left: 0.02rem;
+    margin-right: 0.02rem;
+}
+
+/* 第三段 */
+.container3 p {
+    color: #fff;
+    font-size: 0.3rem;
+    letter-spacing: 0.03rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.5;
+}
+
+.container3 p span.highlight {
+    color: #facf91;
+    margin-left: 0.02rem;
+    margin-right: 0.02rem;
+}
+
+/* 第五段 消费组成 */
+.cgf-costComponent-bg .compose-list {
+    font-size: 0.273066434rem;
+}
+
+.cgf-costComponent-bg .compose-list .compose-item {
+    box-sizing: border-box;
+    height: 0.8rem;
+    background-color: rgba(26, 125, 222, 0.2);
+    border-radius: 5px;
+    border-left: 8px solid rgba(26, 125, 222, 0.6);
+    margin-bottom: 0.1rem;
+}
+
+.cgf-costComponent-bg .compose-list .compose-item .compose-item-inner {
+    padding: 0 15px;
+}
+
+.cgf-costComponent-bg .compose-list .compose-item .compose-item-inner .compose-name {
+    line-height: 0.4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cgf-costComponent-bg .compose-list .compose-item .compose-item-inner .compose-introduction {
+    line-height: 0.4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cgf-costComponent-bg .compose-list .compose-item .compose-item-inner .compose-introduction p {
+    color: #999;
+}
+
+.cgf-costComponent-bg .compose-list .compose-item .compose-item-inner .compose-introduction small {
+    color: #999;
+    font-size: 0.204799825rem;
+}
+
+.table {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    width: 100%;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+.table th {
+    border: 1px solid #dee2e6;
+    font-weight: bold;
+    text-align: left;
+    border-bottom-width: 2px;
+    border-bottom: 2px solid #dee2e6;
+    padding: 0.2rem;
+}
+
+.table td {
+    padding: 0.2rem;
+    vertical-align: top;
+    border: 1px solid #dee2e6;
+}
+
+/* 第七段 */
+.container7 {
+    width: 5.2rem;
+    height: 40%;
+    position: absolute;
+    left: 0.6rem;
+    top: 2rem;
+}
+
+.container7 p {
+    color: black;
+    font-size: 0.3rem;
+    letter-spacing: 0.03rem;
+    width: 4.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.container7 p span.highlight {
+    color: #1f74c9;
+    margin-left: 0.02rem;
+    margin-right: 0.02rem;
+}
+
+/* 更多功能 */
+.info-more {
+    display: block;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    border-top: 5px solid orangered;
+    z-index: 20;
+}
+
+.info-more .info-title {
+    width: 100%;
+    font-size: 16px;
+    line-height: 48px;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-top: 1px solid #eaeaea;
+}
+
+.info-more .share-panel-inner {
+    height: 300px;
+    overflow: auto;
+    padding: 0.53333rem;
+}
+
+.info-more .share-panel-inner .fate li {
+    height: auto;
+    line-height: 28px;
+    margin-top: 0.21333rem;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.info-more .share-panel-inner .fate li p {
+    color: #222;
+    font-size: 15px;
+    line-height: 28px;
+    word-break: break-all;
+}
+
+.info-more .share-panel-inner .label-name {
+    font-size: 15px;
+    color: #fff;
+    background-color: orange;
+    padding: 0.10667rem 0.21333rem;
+}
+
+.info-more .share-panel-inner .label-score {
+    font-size: 15px;
+    color: #fff;
+    background-color: red;
+    padding: 0.10667rem 0.21333rem;
+}
+
+.info-more .info-cancel-btn {
+    width: 100%;
+    font-size: 16px;
+    line-height: 48px;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-top: 1px solid #eaeaea;
+}
+
+.share-panel-inner {
+    line-height: 22px;
+    padding: 0.3rem;
+}
+
+.share-panel-inner .tips {
+    font-size: 0.238933129rem;
+    color: #999;
+    margin-top: 0.273066434rem;
+}
+
+.share-panel-inner .copy-area {
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 0.273066434rem;
+    padding: 0.136533217rem;
+    width: 100%;
+    font-size: 14px;
+    border: 1px dotted #c00d0d;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.share-panel-inner .copy-area .copy-btn {
+    position: absolute;
+    right: 0.136533217rem;
+    border: none;
+    padding: 4px 6px;
+    top: 50%;
+    transform: translate(0, -50%);
+    color: #fff;
+    background-color: #c00d0d;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.icon-link::before {
+    display: block;
+    position: absolute;
+    content: '';
+    background-image: url("https://cdn.soujincheng.com/img/link.png");
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 社交分享 */
+.share-panel {
+    display: none;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+.share-panel .share-panel-inner {
+    padding: 0.341333042rem;
+}
+
+.share-panel .section-title {
+    font-size: 0.273066434rem;
+}
+
+.share-panel .s-share {
+    width: 100%;
+}
+
+.share-panel .s-share .social-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.273066434rem;
+    width: 100%;
+}
+
+.social-share .social-share-icon {
+    background-color: #fff;
+    width: 0.8rem;
+    height: 0.8rem;
+    font-size: 0.5rem;
+    line-height: 0.8rem;
+}
+
+.share-panel .wx-share {
+    margin-top: 0.21333rem;
+}
+
+.share-panel .wx-share .share-qrcode {
+    margin-top: 0.42667rem;
+    text-align: center;
+}
+
+.share-panel .wx-share .share-qrcode img {
+    width: 2.66667rem;
+    height: 2.66667rem;
+}
+
+.share-panel .l-share {
+    margin-top: 0.21333rem;
+}
+
+.share-panel .l-share > a {
+    margin-top: 0.273066434rem;
+}
+
+.share-panel .l-share .copy-area {
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 0.42667rem;
+    padding: 0.21333rem;
+    width: 100%;
+    font-size: 14px;
+    border: 1px dotted #c00d0d;
+    overflow: hidden;
+}
+
+.share-panel .l-share .copy-area .copy-btn {
+    position: absolute;
+    right: 0.21333rem;
+    border: none;
+    padding: 4px 6px;
+    top: 50%;
+    transform: translate(0, -50%);
+    color: #fff;
+    background-color: #c00d0d;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.share-panel .share-cancel-btn {
+    width: 100%;
+    font-size: 16px;
+    line-height: 48px;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-top: 1px solid #eaeaea;
+}
+
+/* 下三角 */
+.arrow-down {
+    position: absolute;
+    left: 45%;
+    bottom: 5px;
+    width: 0.64rem;
+    opacity: .8;
+    animation: arrow_ani 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes arrow_ani {
+    0% {
+        transform: translateY(-1vw);
+        opacity: .8;
+    }
+    100% {
+        transform: translateY(1vw);
+        opacity: .8;
+    }
+}
+
+.personnel-list {
+    background: url(https://cdn.soujincheng.com/img/personnel-list.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.personnel-list .container {
+    position: absolute;
+    top: 3rem;
+    padding: 0 0.5rem;
+    font-size: 0.273066434rem;
+    line-height: 1.5;
+}
+
+.personnel-list small {
+    font-size: 80%;
+}

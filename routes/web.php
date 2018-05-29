@@ -21,11 +21,16 @@ Route::get('/post/{id}', ['uses' => 'PostController@item', 'as' => 'post.item'])
 
 // Project
 Route::get('/project/{id}', ['uses' => 'ProjectController@item', 'as' => 'project.item'])->where(['id' => '[0-9]+']);
-Route::get('/auth/{slug}', ['uses' => 'ProjectController@auth', 'as' => 'project.auth']);
-Route::post('/auth/check/{slug}', ['uses' => 'ProjectController@authCheck', 'as' => 'project.auth.check']);
-Route::get('/view/{slug}', ['uses' => 'ProjectController@viewIndex', 'as' => 'project.view']);
-Route::get('/view/{slug}/main', ['uses' => 'ProjectController@viewMain', 'as' => 'project.view.main']);
 Route::get('/project', ['uses' => 'ProjectController@index', 'as' => 'project.index']);
+
+// HTML5
+Route::get('/auth/{slug}', ['uses' => 'Html5Controller@auth', 'as' => 'html5.auth']);
+Route::get('/auth/share/{slug}/{code}', ['uses' => 'Html5Controller@authShare', 'as' => 'html5.auth.share']);
+Route::post('/auth/check/{slug}', ['uses' => 'Html5Controller@authCheck', 'as' => 'html5.auth.check']);
+Route::get('/view/{slug}', ['uses' => 'Html5Controller@viewIndex', 'as' => 'html5.view']);
+Route::get('/view/{slug}/main', ['uses' => 'Html5Controller@viewMain', 'as' => 'html5.view.main']);
+Route::get('/webView/', ['uses' => 'Html5Controller@webView', 'as' => 'html.webView']);
+
 
 // App
 Route::get('/', ['uses' => 'AppController@index', 'as' => 'index']);

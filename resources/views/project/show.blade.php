@@ -29,7 +29,7 @@
                             </button>
                         </a>
                     @else
-                        <a href="{{route('project.view',$project->slug)}}" target="_blank">
+                        <a href="{{route('html5.view',$project->slug)}}" target="_blank">
                             <button class="mdui-btn mdui-btn-block mdui-color-indigo mdui-ripple">
                                 进入项目
                             </button>

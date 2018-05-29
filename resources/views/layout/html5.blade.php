@@ -10,6 +10,15 @@
     <meta name="description" content="{{config('siteDescription')}} @yield('description')">
     @yield('header')
     <script>
+        const directUrl = '{{URL::current()}}';
+        if (self == top) {
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            } else {
+                window.location = "https://data.soujincheng.com/webView?url=" + directUrl;
+            }
+        }
+    </script>
+    <script>
         var _hmt = _hmt || [];
         (function () {
             var hm = document.createElement("script");
