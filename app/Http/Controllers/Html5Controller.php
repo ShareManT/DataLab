@@ -74,12 +74,27 @@ class Html5Controller extends Controller
         if ($user) {
             session(['authId' => $user->stuId]);
             session(['authName' => $user->name]);
-            Log::updateOrCreate(['stuId' => $user->stuId, 'type' => $project->slug], ['name' => $user->name, 'loginIP' => $_SERVER["REMOTE_ADDR"]]);
-            Log::where('stuId', $user->stuId)->where('type', $project->slug)->increment('loginCounts');
+            Log::updateOrCreate(['stuId' => $user->stuId, 'type' => $project->slug], ['name' => $user->name, 'loginIP' => $_SERVER["REMOTE_ADDR"]])->increment('loginCounts');
             return redirect()->route('html5.view.main', $project->slug)->with('notify', '授权成功，您的数据报告已生成');
         } else {
-            Log::updateOrCreate(['stuId' => '-' . $request->input('stuId')], ['type' => $slug, 'name' => $request->input('name'), 'loginIP' => $_SERVER["REMOTE_ADDR"], 'memo' => '无效账号']);
+            Log::updateOrCreate(['stuId' => 'invalid' . $request->input('stuId')], ['type' => $slug, 'name' => $request->input('name'), 'loginIP' => $_SERVER["REMOTE_ADDR"], 'memo' => '无效账号']);
             return back()->withInput()->with('notify', '你的学号/工号有误或未录入！');
+        }
+    }
+
+    public function authShare($slug, $code, Request $request)
+    {
+        $decode = explode('@', base64_decode($code));
+        $userId = $decode[0];
+        $userName = $decode[1];
+        $user = User::where('stuId', $userId)->where('name', $userName)->first();
+        if ($user) {
+            session(['authId' => $user->stuId]);
+            session(['authName' => $user->name]);
+            Log::updateOrCreate(['stuId' => 'invite' . $user->stuId, 'type' => $slug], ['name' => $user->name, 'loginIP' => $_SERVER["REMOTE_ADDR"], 'memo' => '受邀无密访问'])->increment('loginCounts');
+            return redirect()->to(route('html5.view.main', $slug));
+        } else {
+            return '加密连接有误';
         }
     }
 
@@ -101,7 +116,7 @@ class Html5Controller extends Controller
                 $firstEnterData = DB::table('libraryEnterRecords')->where('id', $id)->orderBy('date', 'asc')->orderBy('time', 'asc')->first();
                 return view('html5.view.' . $slug . '.main', compact('project', 'borrowDatas', 'resultDatas', 'enterDatas', 'timeDatas', 'relationDatas', 'firstEnterData'));
             } elseif ($slug == 'card2017') {
-                $shareUrl = route('html5.auth.share', ['slug' => $slug, 'code' => md5($id . $name)]);
+                $shareUrl = route('html5.auth.share', ['slug' => $slug, 'code' => base64_encode($id . '@' . $name)]);
                 return view('html5.view.' . $slug . '.main', compact('project', 'id', 'name', 'shareUrl'));
             }
             return '没有匹配的项目视图数据控制器';

@@ -25,7 +25,8 @@
     </div>
     <div class="wrap">
         <div id="audio-btn" class="on" onclick="music.changeClass(this,'media')">
-            <audio loop="loop" src="http://music.163.com/song/media/outer/url?id=29207827.mp3" id="media" preload="preload"
+            <audio loop="loop" src="http://music.163.com/song/media/outer/url?id=29207827.mp3" id="media"
+                   preload="preload"
                    autoplay></audio>
         </div>
         <div id="fullpage">
@@ -35,7 +36,8 @@
                        class="title_one">你好，<span
                                 id="userName" class="highlight"></span></p>
                     <p amt="animated slideInLeft" class="title_one animated slideInLeft">感谢开启你的2017饭卡数据报告</p>
-                    <p amt="animated slideInLeft" class="title-collageCost-bg-three">
+                    <p amt="animated slideInLeft" class="title_one animated slideInLeft">在过去的2017年</p>
+                    <p style="display: none;" amt="animated slideInLeft" class="title-collageCost-bg-three">
                         2017年全校饭卡消费近<span
                                 class="night highlight ranks">[3]</span>亿元</p>
                     <p amt="animated slideInLeft" class="title-collageCost-bg-four">你消费了<span
@@ -219,7 +221,8 @@
                     </div>
                 </div>
             </div>
-            <div class="section cgf-position-bg"><img src="https://cdn.soujincheng.com/card2017/img/one-to-three.png" class="container4"/>
+            <div class="section cgf-position-bg"><img src="https://cdn.soujincheng.com/card2017/img/one-to-three.png"
+                                                      class="container4"/>
                 <div class="position-text" amt="animated slideInDown">
                     <div class="container4-two">
                         <div class="one-text">
@@ -274,15 +277,15 @@
                         <p class="detail-btn">点我打开秘籍</p></div>
                 </div>
             </div>
-            <div class="section cgf-costAttr-bg">
-                <img id="keywordImg" class="keyword-img"
-                     src="https://cdn.soujincheng.com/img/KeyWordImage/KeyWordImage1.jpg"
-                     alt="">
-            </div>
             <div class="section cgf-all-bg">
                 <div class="container11" amt="animated rotateIn"><!--总账单的饼图-->
                     <div id="container" style="height: 100%"></div>
                 </div>
+            </div>
+            <div class="section cgf-costAttr-bg">
+                <img id="keywordImg" class="keyword-img"
+                     src="https://cdn.soujincheng.com/img/KeyWordImage/KeyWordImage1.jpg"
+                     alt="">
             </div>
             <div class="section cgf-mp-bg">
                 <div class="container13">
@@ -298,7 +301,7 @@
                                     <p>曾小满 彭伟</p>
                                 </div>
                                 <div class="paragraph">
-                                    <small>HTML5开发 · 前端</small>
+                                    <small>HTMl5 开发 · 前端</small>
                                     <p>王治文 曾小满 陈国峰</p>
                                 </div>
                                 <div class="paragraph">
@@ -311,8 +314,8 @@
                                 </div>
                                 <div class="paragraph">
                                     <small>宣传协助</small>
+                                    <p>郝晨露 郭倍余 陈龙 杜柳宜</p>
                                     <p>陈旭东 陈家俊 林弟忠 马秘 薛然 钟锦锋</p>
-                                    <p>郝晨露 郭倍余 陈龙 杜柳怡</p>
                                 </div>
                             </div>
                         </div>
@@ -353,7 +356,8 @@
             <div class="share-panel-inner">
                 <div class="s-share" style="display: none;"><p class="section-title">社交分享</p>
                     <div class="social-list" data-mode="prepend" data-description="">
-                        <a href="javascript:;" id="copyBtn" class="social-share-icon icon-link" data-clipboard-text=""></a>
+                        <a href="javascript:;" id="copyBtn" class="social-share-icon icon-link"
+                           data-clipboard-text=""></a>
                     </div>
                 </div>
                 <div class="public-share" style="display: none;"><p class="section-title">公开分享</p>
@@ -371,8 +375,8 @@
 @section('footer')
     <script>
         const apiUrl = 'https://data.soujincheng.com/api/data/MealCard?id={{$id}}&name={{$name}}';
-        const shareUrl='{{$shareUrl}}';
-        const projectUrl='{{route('html5.view',$project->slug)}}';
+        const shareUrl = '{{$shareUrl}}';
+        const projectUrl = '{{route('html5.view',$project->slug)}}';
     </script>
     <script src="//cdn.soujincheng.com/card2017/js/app.min.js"></script>
     <script src="//cdn.soujincheng.com/card2017/js/echarts.min.js"></script>

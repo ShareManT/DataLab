@@ -17,9 +17,7 @@
                 window.location = "https://data.soujincheng.com/webView?url=" + directUrl;
             }
         }
-    </script>
-    <script>
-        var _hmt = _hmt || [];
+        let _hmt = _hmt || [];
         (function () {
             var hm = document.createElement("script");
             hm.src = "https://hm.baidu.com/hm.js?ca626f87275090d71ff21c6ebfb820c1";
