@@ -1,12 +1,12 @@
 @extends( 'layout.html5' )
 @section( 'title', $resultDatas->name.' 2017阅读报告 - 锦城数据实验室' )
 @section('header')
-    <link rel="stylesheet" href="//cdn.soujincheng.com/library2017/css/vendor/normalize.min.css">
-    <link rel="stylesheet" href="//cdn.soujincheng.com/library2017/css/vendor/animate.min.css">
-    <link rel="stylesheet" href="//cdn.soujincheng.com/library2017/css/common.css?{{time()}}">
-    <link rel="stylesheet" href="//cdn.soujincheng.com/library2017/css/vendor/share.min.css">
-    <link rel="stylesheet" href="//cdn.soujincheng.com/library2017/css/page.css?{{time()}}">
-    <script src="//cdn.soujincheng.com/library2017/js/rem-resize.js"></script>
+    <link rel="stylesheet" href="//jcqsscdn.ochase.com/remote/library2017/css/vendor/normalize.min.css">
+    <link rel="stylesheet" href="//jcqsscdn.ochase.com/remote/library2017/css/vendor/animate.min.css">
+    <link rel="stylesheet" href="//jcqsscdn.ochase.com/remote/library2017/css/common.css?{{time()}}">
+    <link rel="stylesheet" href="//jcqsscdn.ochase.com/remote/library2017/css/vendor/share.min.css">
+    <link rel="stylesheet" href="//jcqsscdn.ochase.com/remote/library2017/css/page.css?{{time()}}">
+    <script src="//jcqsscdn.ochase.com/remote/library2017/js/rem-resize.js"></script>
     <style>
         @media (max-height: 600px) {
             .hide-on-small-screen {
@@ -19,14 +19,14 @@
     <div id="wrap">
         <div id="app">
             <div class="section page2">
-                <img class="title" src="//cdn.soujincheng.com/library2017/img/page2-title.png" alt="图书馆">
+                <img class="title" src="//jcqsscdn.ochase.com/remote/library2017/img/page2-title.png" alt="图书馆">
                 <img class="bg-bookcase component animated fadeInRight" data-animate="fadeInRight"
-                     src="//cdn.soujincheng.com/library2017/img/page2-bookcase.png"
+                     src="//jcqsscdn.ochase.com/remote/library2017/img/page2-bookcase.png"
                      alt="书架">
                 <img class="bg-chair component animated fadeInLeft" data-animate="fadeInLeft"
-                     src="//cdn.soujincheng.com/library2017/img/page2-chair.png"
+                     src="//jcqsscdn.ochase.com/remote/library2017/img/page2-chair.png"
                      alt="读书的人和椅子">
-                <img class="bg-clock" src="//cdn.soujincheng.com/library2017/img/page2-clock.png" alt="时钟">
+                <img class="bg-clock" src="//jcqsscdn.ochase.com/remote/library2017/img/page2-clock.png" alt="时钟">
                 <div class="content component animated fadeInLeft" data-animate="fadeInLeft">
                     <p style="font-size: 22px">{{$resultDatas->name or ''}}
                         <small>，你好！</small>
@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="section page3">
-                <img class="title" src="//cdn.soujincheng.com/library2017/img/page3-title.png" alt="热门图书">
+                <img class="title" src="//jcqsscdn.ochase.com/remote/library2017/img/page3-title.png" alt="热门图书">
                 <div class="content">
                     <p>
                         <span class="f-18 c-stress">2017年</span>
@@ -83,7 +83,7 @@
                 </div>
             </div>
             <div class="section page4">
-                <img class="title" src="//cdn.soujincheng.com/library2017/img/page4-title.png" alt="第一本书">
+                <img class="title" src="//jcqsscdn.ochase.com/remote/library2017/img/page4-title.png" alt="第一本书">
                 <div class="content component animated" data-animate="fadeInLeft">
                     <p>我在图书馆借的第一本书是在</p>
                     <p class="mt-2">
@@ -104,16 +104,16 @@
                     </p>
                 </div>
                 <img class="wave-black1 component animated" data-animate="slideInRight"
-                     src="//cdn.soujincheng.com/library2017/img/page4-wave-black1.png"
+                     src="//jcqsscdn.ochase.com/remote/library2017/img/page4-wave-black1.png"
                      alt="">
                 <img class="wave-black2 component animated" data-animate="fadeInRight"
-                     src="//cdn.soujincheng.com/library2017/img/page4-wave-black2.png"
+                     src="//jcqsscdn.ochase.com/remote/library2017/img/page4-wave-black2.png"
                      alt="">
             </div>
             <div class="section page8">
-                <img class="title" src="//cdn.soujincheng.com/library2017/img/page8-title.png" alt="我借过的书">
+                <img class="title" src="//jcqsscdn.ochase.com/remote/library2017/img/page8-title.png" alt="我借过的书">
                 <img class="circular component animated" data-animate="fadeInDown"
-                     src="//cdn.soujincheng.com/library2017/img/page8-circular.png">
+                     src="//jcqsscdn.ochase.com/remote/library2017/img/page8-circular.png">
                 <div class="content component animated" data-animate="fadeInLeft">
                     <p>
                         <span class="f-18 c-stress">2017年</span>
@@ -143,7 +143,7 @@
                 </div>
             </div>
             <div class="section page9">
-                <img class="title" src="//cdn.soujincheng.com/library2017/img/page9-title.png" alt="图书馆的日子">
+                <img class="title" src="//jcqsscdn.ochase.com/remote/library2017/img/page9-title.png" alt="图书馆的日子">
                 <div class="content component animated" data-animate="fadeInLeft">
                     <p>
                         <span class="f-18 c-stress">2017年</span>
@@ -171,9 +171,9 @@
                 </div>
             </div>
             <div class="section page5">
-                <img class="title" src="//cdn.soujincheng.com/library2017/img/page5-title.png" alt="">
+                <img class="title" src="//jcqsscdn.ochase.com/remote/library2017/img/page5-title.png" alt="">
                 <img class="wave component animated" data-animate="fadeInDown"
-                     src="//cdn.soujincheng.com/library2017/img/page5-wave.png">
+                     src="//jcqsscdn.ochase.com/remote/library2017/img/page5-wave.png">
                 <div class="content component animated" data-animate="fadeInLeft">
                     <p class="mt-2">我所在的学院年级/部门</p>
                     <p class="mt-2">
@@ -251,12 +251,12 @@
                             </span> 人
                     </div>
                 </div>
-                <img class="leaf" src="//cdn.soujincheng.com/library2017/img/leaf.png" alt="">
+                <img class="leaf" src="//jcqsscdn.ochase.com/remote/library2017/img/leaf.png" alt="">
             </div>
             <div class="section page10">
-                <img class="title" src="//cdn.soujincheng.com/library2017/img/page10-title.png" alt="">
+                <img class="title" src="//jcqsscdn.ochase.com/remote/library2017/img/page10-title.png" alt="">
                 <img class="lover component animated" data-animate="fadeInDown"
-                     src="//cdn.soujincheng.com/library2017/img/page10-lover.png">
+                     src="//jcqsscdn.ochase.com/remote/library2017/img/page10-lover.png">
                 <div class="content component animated" data-animate="fadeInLeft">
                     <p>
                         与你的读书契合度高的
@@ -269,9 +269,9 @@
                                     <p>
                                         <span class="label-name mlr-8">{{$person->name2 or ''}}</span>
                                         有缘指数
-                                        <img src="//cdn.soujincheng.com/library2017/img/cc-star.png" width="20px">
+                                        <img src="//jcqsscdn.ochase.com/remote/library2017/img/cc-star.png" width="20px">
                                         @for ($i = 0; $i < floor($person->percent/0.05); $i++)
-                                            <img src="//cdn.soujincheng.com/library2017/img/cc-star.png" width="20px">
+                                            <img src="//jcqsscdn.ochase.com/remote/library2017/img/cc-star.png" width="20px">
                                             @break($i == 3)
                                         @endfor
                                     </p>
@@ -287,7 +287,7 @@
                     <a href="{{route('project.item','2')}}" target="_blank">
                         <div class="card">
                             <div class="card-img">
-                                <img src="//cdn.soujincheng.com/library2017/img/preview-banner02.jpg" alt="bannner01">
+                                <img src="//jcqsscdn.ochase.com/remote/library2017/img/preview-banner02.jpg" alt="bannner01">
                             </div>
                             <div class="card-content">
                                 <span style="color: #ffffff;background: red; padding: 5px;margin: 5px 0;">[ 下期预告 ] 锦城饭卡消费报告</span>
@@ -302,7 +302,7 @@
                         <a href="{{route('project.index')}}" target="_blank">关注微信公众号“数据秘书”
                             <br>获取下一期数据报告最新动态</a>
                         <div style="text-align: center">
-                            <img src="//cdn.soujincheng.com/library2017/img/QRCodeWeChat.png" width="160px">
+                            <img src="//jcqsscdn.ochase.com/remote/library2017/img/QRCodeWeChat.png" width="160px">
                         </div>
                     </div>
                 </div>
@@ -367,7 +367,7 @@
         <div class="link-info">
             <p style="background:rgba(255,255,255,0.8);border-radius:15px;padding: 5px 15px">下拉分享！</p>
         </div>
-        <img class="arrow-bottom" src="//cdn.soujincheng.com/library2017/img/arrow.png" alt="">
+        <img class="arrow-bottom" src="//jcqsscdn.ochase.com/remote/library2017/img/arrow.png" alt="">
         <!-- 音乐播放功能 -->
         <a id="audioBtn" class="play">
             <audio id="bgMusic" autoplay loop>
@@ -386,7 +386,7 @@
                 <div class="wx-share">
                     <p class="section-title">微信分享</p>
                     <p class="share-qrcode">
-                        <img src="//cdn.soujincheng.com/library2017/img/QRCode.png" alt="微信二维码">
+                        <img src="//jcqsscdn.ochase.com/remote/library2017/img/QRCode.png" alt="微信二维码">
                     </p>
                 </div>
                 <div class="l-share">
@@ -421,9 +421,9 @@
                             <p>
                                 <span class="label-name mlr-8">{{$person->name2 or ''}}</span>
                                 有缘指数
-                                <img src="//cdn.soujincheng.com/library2017/img/cc-star.png" width="20px">
+                                <img src="//jcqsscdn.ochase.com/remote/library2017/img/cc-star.png" width="20px">
                                 @for ($i = 0; $i < floor($person->percent/0.05); $i++)
-                                    <img src="//cdn.soujincheng.com/library2017/img/cc-star.png" width="20px">
+                                    <img src="//jcqsscdn.ochase.com/remote/library2017/img/cc-star.png" width="20px">
                                     @break($i == 3)
                                 @endfor
                             </p>
@@ -436,9 +436,9 @@
     </div>
 @endsection
 @section('footer')
-    <script src="//cdn.soujincheng.com/library2017/js/vendor/jquery.min.js"></script>
-    <script src="//cdn.soujincheng.com/library2017/js/vendor/jquery.fullPage.js"></script>
-    <script src="//cdn.soujincheng.com/library2017/js/vendor/jquery.share.min.js"></script>
-    <script src="//cdn.soujincheng.com/library2017/js/vendor/clipboard.min.js"></script>
+    <script src="//jcqsscdn.ochase.com/remote/library2017/js/vendor/jquery.min.js"></script>
+    <script src="//jcqsscdn.ochase.com/remote/library2017/js/vendor/jquery.fullPage.js"></script>
+    <script src="//jcqsscdn.ochase.com/remote/library2017/js/vendor/jquery.share.min.js"></script>
+    <script src="//jcqsscdn.ochase.com/remote/library2017/js/vendor/clipboard.min.js"></script>
     <script src="{{asset('assets/library2017/main.js')}}?{{time()}}"></script>
 @endsection

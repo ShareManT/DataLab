@@ -14,7 +14,7 @@
         if (self == top) {
             if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             } else {
-                window.location = "https://data.soujincheng.com/webView?url=" + directUrl;
+                window.location = "https://datalab.ochase.com/webView?url=" + directUrl;
             }
         }
         let _hmt = _hmt || [];

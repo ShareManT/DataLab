@@ -47,13 +47,13 @@
 }
 
 .on {
-    background: url('https://cdn.soujincheng.com/img/music_on.png') no-repeat 0 0;
+    background: url('http://jcqsscdn.ochase.com/remote/img/music_on.png') no-repeat 0 0;
     -webkit-animation: rotating 2s linear infinite;
     animation: rotating 2s linear infinite;
 }
 
 .off {
-    background: url('https://cdn.soujincheng.com/img/music_off.png') no-repeat 0 0;
+    background: url('http://jcqsscdn.ochase.com/remote/img/music_off.png') no-repeat 0 0;
 }
 
 @-webkit-keyframes rotating {
@@ -107,7 +107,7 @@
 /*第一版的内容*/
 
 .cgf-Bed-bg {
-    background: url(https://cdn.soujincheng.com/img/toBed.png) no-repeat;
+    background: url(http://jcqsscdn.ochase.com/remote/img/toBed.png) no-repeat;
     background-size: 100%;
 }
 
@@ -121,7 +121,7 @@
 }
 
 .move_img {
-    /*background: url('https://cdn.soujincheng.com/img/music_on.png') no-repeat 0 0;*/
+    /*background: url('http://jcqsscdn.ochase.com/remote/img/music_on.png') no-repeat 0 0;*/
     position: absolute;
     top: 0;
     left: 0;
@@ -220,7 +220,7 @@
 .cgf-two-bg {
     width: 6.4rem;
     height: 100%;
-    background: url(https://cdn.soujincheng.com/img/shou2.png) no-repeat;
+    background: url(http://jcqsscdn.ochase.com/remote/img/shou2.png) no-repeat;
     background-size: 100%;
     position: absolute;
     top: 0;
@@ -231,7 +231,7 @@
 /*第二栏 晚睡*/
 
 .cgf-sleep-bg {
-    background: url(https://cdn.soujincheng.com/img/sleepLate.png) no-repeat;
+    background: url(http://jcqsscdn.ochase.com/remote/img/sleepLate.png) no-repeat;
     background-size: 100%;
 }
 
@@ -312,7 +312,7 @@ top: 50%; */
 /*第三栏 消费*/
 
 .cgf-cost-bg {
-    background: url(https://cdn.soujincheng.com/img/cost.png) no-repeat;
+    background: url(http://jcqsscdn.ochase.com/remote/img/cost.png) no-repeat;
     background-size: 100%;
 }
 
@@ -392,7 +392,7 @@ top: 50%; */
 
 /*第四栏 地点*/
 .cgf-position-bg {
-    background: url(https://cdn.soujincheng.com/img/position.png) no-repeat;
+    background: url(http://jcqsscdn.ochase.com/remote/img/position.png) no-repeat;
     background-size: 100%;
 }
 
@@ -420,7 +420,7 @@ top: 50%; */
     margin: 0 auto;
     box-sizing: border-box;
     /*border:1px solid #fff;*/
-    background: url(https://cdn.soujincheng.com/img/position-bg.png);
+    background: url(http://jcqsscdn.ochase.com/remote/img/position-bg.png);
     background-size: 100%;
     height: 50%;
     display: flex;
@@ -477,7 +477,7 @@ top: 50%; */
 /*第五栏 消费组成*/
 
 .cgf-costComponent-bg {
-    background: url(https://cdn.soujincheng.com/img/costComponent.png) no-repeat;
+    background: url(http://jcqsscdn.ochase.com/remote/img/costComponent.png) no-repeat;
     background-size: 100%;
 }
 
@@ -589,7 +589,7 @@ top: 50%; */
 
 /*第六栏 假期*/
 .cgf-vacation-bg {
-    background: url(https://cdn.soujincheng.com/img/vacation.png) no-repeat;
+    background: url(http://jcqsscdn.ochase.com/remote/img/vacation.png) no-repeat;
     background-size: 100%;
 }
 
@@ -638,7 +638,7 @@ top: 50%; */
 /*第七栏 院系消费*/
 
 .cgf-collageCost-bg {
-    background: url(https://cdn.soujincheng.com/img/collageCost.png) no-repeat;
+    background: url(http://jcqsscdn.ochase.com/remote/img/collageCost.png) no-repeat;
     background-size: 100%;
 }
 
@@ -671,7 +671,7 @@ top: 50%; */
 /*第八栏 月份消费*/
 
 .cgf-costMoth-bg {
-    background: url(https://cdn.soujincheng.com/img/costEveryMonth.png) no-repeat;
+    background: url(http://jcqsscdn.ochase.com/remote/img/costEveryMonth.png) no-repeat;
     background-size: 100%;
 }
 
@@ -732,7 +732,7 @@ top: 50%; */
 
 /*第九栏 关系链*/
 .cgf-connection-bg {
-    background: url(https://cdn.soujincheng.com/img/connection.png) no-repeat;
+    background: url(http://jcqsscdn.ochase.com/remote/img/connection.png) no-repeat;
     background-size: 100%;
 }
 
@@ -764,7 +764,7 @@ top: 50%; */
 .container-one-9 {
     width: 5.4rem;
     height: 18%;
-    background: url(https://cdn.soujincheng.com/img/connection1.png) no-repeat;
+    background: url(http://jcqsscdn.ochase.com/remote/img/connection1.png) no-repeat;
     background-size: 100%;
     overflow: scroll;
     position: absolute;
@@ -783,7 +783,7 @@ top: 50%; */
 .container-two-9 {
     width: 5.4rem;
     height: 2.09708736rem;
-    background: url(https://cdn.soujincheng.com/img/max-heatMap.png) no-repeat;
+    background: url(http://jcqsscdn.ochase.com/remote/img/max-heatMap.png) no-repeat;
     background-size: 100%;
     position: relative;
     /* overflow: scroll; */
@@ -798,7 +798,7 @@ top: 50%; */
     height: 2.09708736rem;
     margin-top: 0.349726164rem;
     /**/
-    background: url(https://cdn.soujincheng.com/img/min-heatMap.png) no-repeat;
+    background: url(http://jcqsscdn.ochase.com/remote/img/min-heatMap.png) no-repeat;
     background-size: 100%;
     position: relative;
     /* overflow: scroll; */
@@ -812,7 +812,7 @@ top: 50%; */
 
 .cgf-costAttr-bg {
     position: relative;
-    background: url(https://cdn.soujincheng.com/img/container10.png) no-repeat;
+    background: url(http://jcqsscdn.ochase.com/remote/img/container10.png) no-repeat;
     background-size: 100%;
 }
 
@@ -904,7 +904,7 @@ top: 50%; */
 
 /*第十一栏 总帐单*/
 .cgf-all-bg {
-    background: url(https://cdn.soujincheng.com/img/allSheet.png) no-repeat;
+    background: url(http://jcqsscdn.ochase.com/remote/img/allSheet.png) no-repeat;
     background-size: 100%;
 }
 
@@ -926,7 +926,7 @@ top: 50%; */
 
 /*第十二栏 结束页*/
 .cgf-end-bg {
-    background: url(https://cdn.soujincheng.com/img/end.png) no-repeat;
+    background: url(http://jcqsscdn.ochase.com/remote/img/end.png) no-repeat;
     background-size: 100%;
 }
 
@@ -934,7 +934,7 @@ top: 50%; */
     display: block;
     width: 3rem;
     height: 0.8rem;
-    /* background:url(https://cdn.soujincheng.com/img/); */
+    /* background:url(http://jcqsscdn.ochase.com/remote/img/); */
     /*  */
     cursor: pointer;
     outline: 0;
@@ -961,7 +961,7 @@ top: 50%; */
 
 /*第十三栏 食堂高峰*/
 .cgf-mp-bg {
-    background: url(https://cdn.soujincheng.com/img/team.png) no-repeat;
+    background: url(http://jcqsscdn.ochase.com/remote/img/team.png) no-repeat;
     background-size: 100%;
 }
 
@@ -1324,7 +1324,7 @@ top: 50%; */
     display: block;
     position: absolute;
     content: '';
-    background-image: url("https://cdn.soujincheng.com/img/link.png");
+    background-image: url("http://jcqsscdn.ochase.com/remote/img/link.png");
     width: 30px;
     height: 30px;
     background-size: contain;
@@ -1447,7 +1447,7 @@ top: 50%; */
 }
 
 .personnel-list {
-    background: url(https://cdn.soujincheng.com/img/personnel-list.png);
+    background: url(http://jcqsscdn.ochase.com/remote/img/personnel-list.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }

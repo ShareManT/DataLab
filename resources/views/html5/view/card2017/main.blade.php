@@ -1,7 +1,7 @@
 @extends( 'layout.html5' )
 @section( 'title',' 2017饭卡消费记录 - 锦城数据实验室' )
 @section('header')
-    <link rel="stylesheet" href="//cdn.soujincheng.com/card2017/css/app.min.css">
+    <link rel="stylesheet" href="http://jcqsscdn.ochase.com/remote/card2017/css/app.min.css">
 @endsection
 @section( 'content' )
     <div class="loader">
@@ -221,7 +221,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section cgf-position-bg"><img src="https://cdn.soujincheng.com/card2017/img/one-to-three.png"
+            <div class="section cgf-position-bg"><img src="http://jcqsscdn.ochase.com/remote//card2017/img/one-to-three.png"
                                                       class="container4"/>
                 <div class="position-text" amt="animated slideInDown">
                     <div class="container4-two">
@@ -284,7 +284,7 @@
             </div>
             <div class="section cgf-costAttr-bg">
                 <img id="keywordImg" class="keyword-img"
-                     src="https://cdn.soujincheng.com/img/KeyWordImage/KeyWordImage1.jpg"
+                     src="http://jcqsscdn.ochase.com/remote//img/KeyWordImage/KeyWordImage1.jpg"
                      alt="">
             </div>
             <div class="section cgf-mp-bg">
@@ -329,7 +329,7 @@
                 <div amt="animated slideInUp"></div>
             </div>
         </div>
-        <img class="arrow-down" src="https://cdn.soujincheng.com/img/arrow.png">
+        <img class="arrow-down" src="http://jcqsscdn.ochase.com/remote//img/arrow.png">
         <div class="info-more" style="display: none;">
             <div class="info-title">查看详情</div>
             <div id="share-panel-inner" style="height: 300px;overflow: auto; padding: 0.2rem"><!--所有查看详情列表共享此面板-->
@@ -374,11 +374,11 @@
 @endsection
 @section('footer')
     <script>
-        const apiUrl = 'https://data.soujincheng.com/api/data/MealCard?id={{$id}}&name={{$name}}';
+        const apiUrl = 'https://datalab.ochase.com/api/data/MealCard?id={{$id}}&name={{$name}}';
         const shareUrl = '{{$shareUrl}}';
         const projectUrl = '{{route('html5.view',$project->slug)}}';
     </script>
-    <script src="//cdn.soujincheng.com/card2017/js/app.min.js"></script>
-    <script src="//cdn.soujincheng.com/card2017/js/echarts.min.js"></script>
+    <script src="http://jcqsscdn.ochase.com/remote/card2017/js/app.min.js"></script>
+    <script src="http://jcqsscdn.ochase.com/remote/card2017/js/echarts.min.js"></script>
     <script src="{{asset('assets/card2017/js/core.js')}}?{{time()}}"></script>
 @endsection

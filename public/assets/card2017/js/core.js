@@ -235,7 +235,7 @@ $.ajax({
             setHeatMapDetail(school.heatMap.min, '.min-heatmap');
 
             // 关键词描述 根据 json 返回的 keywordImageNumber 数据动态改变 图片的 src
-            $('#keywordImg').attr('src', `https://cdn.soujincheng.com/card2017/img/KeyWordImage/KeyWordImage${result.keywordImageNumber}.jpg`);
+            $('#keywordImg').attr('src', `http://jcqsscdn.ochase.com/remote/card2017/img/KeyWordImage/KeyWordImage${result.keywordImageNumber}.jpg`);
 
             // 再看一次 分享
             const shareText = `WoW！在过去的2017年，我在锦城使用了 ${result.amountDealCounts} 次，共计消费 ${result.sum}，在全校中排名 ${result.rank}，超过 ${'50%'} 的同学。消费最高的一天是 ${result.maxExpenseDayDate}，竟然消费了 ${result.maxExpenseDayMoney} 元 >>`;
