@@ -32,7 +32,7 @@ li {
   width: 100%;
   max-width: 640px;
   height: 100%;
-  background-image: url(http://jcqsscdn.ochase.com/remote/library2017/img/bg.png);
+  background-image: url(/public/assets/remote//library2017/img/bg.png);
 }
 
 #wrap .section {
@@ -168,7 +168,7 @@ li {
 }
 
 #audioBtn.play {
-  background-image: url(http://jcqsscdn.ochase.com/remote/library2017/img/play.png);
+  background-image: url(/public/assets/remote//library2017/img/play.png);
   background-repeat: no-repeat;
   background-size: 100%;
   animation: rotate 4s linear infinite;
@@ -184,7 +184,7 @@ li {
 }
 
 #audioBtn.pause {
-  background-image: url(http://jcqsscdn.ochase.com/remote/library2017/img/pause.png);
+  background-image: url(/public/assets/remote//library2017/img/pause.png);
   background-repeat: no-repeat;
   background-size: 100%;
 }

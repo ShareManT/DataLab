@@ -374,7 +374,7 @@
 @endsection
 @section('footer')
     <script>
-        const apiUrl = 'https://datalab.ochase.com/api/data/MealCard?id={{$id}}&name={{$name}}';
+        const apiUrl = '/api/data/MealCard?id={{$id}}&name={{$name}}';
         const shareUrl = '{{$shareUrl}}';
         const projectUrl = '{{route('html5.view',$project->slug)}}';
     </script>

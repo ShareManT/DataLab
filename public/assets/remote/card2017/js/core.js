@@ -267,7 +267,7 @@ $.ajax({
 
         } else {
             alert('数据获取出错，请重新输入学号/工号和姓名');
-            location.href = "https://data.soujincheng.com/auth/card2017";
+            location.href = "/auth/card2017";
         }
     },
     error: function (err) {

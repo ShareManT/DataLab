@@ -1,7 +1,7 @@
 .section{position:relative}
 .section .title{position:absolute;height:1.04rem;top:20px;left:20px;z-index:2}
 .section .content{z-index:10}
-.page2{background-image:url(http://jcqsscdn.ochase.com/remote/library2017/img/page2-bg.png);background-repeat:no-repeat;background-size:100%;background-position:top}
+.page2{background-image:url(/public/assets/remote//library2017/img/page2-bg.png);background-repeat:no-repeat;background-size:100%;background-position:top}
 .page2 .bg-bookcase{position:absolute;left:0;bottom:2.13333rem;height:3.73333rem}
 .page2 .bg-chair{position:absolute;right:.13333rem;bottom:.8rem;width:10rem;height:3.78667rem}
 .page2 .content{position:absolute;top:17.7%;padding-left:20px;padding-right:20px;width:100%;box-sizing:border-box}
@@ -11,41 +11,41 @@
 @keyframes roating{from{-webkit-transform:rotate(0)}
 to{-webkit-transform:rotate(360deg)}
 }
-.page3{background-image:url(http://jcqsscdn.ochase.com/remote/library2017/img/page3-bg.png);background-repeat:no-repeat;background-size:100%;background-position:top}
+.page3{background-image:url(/public/assets/remote//library2017/img/page3-bg.png);background-repeat:no-repeat;background-size:100%;background-position:top}
 .page3 .content{position:absolute;top:17.7%;padding-left:20px;padding-right:20px;width:100%;box-sizing:border-box}
 @media (min-width:360px){.page3 .content{top:20%}
 }
-.page4{background-image:url(http://jcqsscdn.ochase.com/remote/library2017/img/page4-bg.png);background-repeat:no-repeat;background-size:100%;background-position:top}
+.page4{background-image:url(/public/assets/remote//library2017/img/page4-bg.png);background-repeat:no-repeat;background-size:100%;background-position:top}
 .page4 .content{position:absolute;top:17.7%;padding-left:20px;padding-right:100px;width:100%;box-sizing:border-box}
 @media (min-width:360px){.page4 .content{top:20%}
 }
 .page4 .wave-black1{position:absolute;top:0;right:0;width:2.42667rem;height:100%}
 .page4 .wave-black2{position:absolute;top:0;right:0;width:2.96rem;height:100%}
-.page5{background-image:url(http://jcqsscdn.ochase.com/remote/library2017/img/page5-bg.png);background-repeat:no-repeat;background-size:100%;background-position:top}
+.page5{background-image:url(/public/assets/remote//library2017/img/page5-bg.png);background-repeat:no-repeat;background-size:100%;background-position:top}
 .page5 .content{position:absolute;top:17.7%;padding-left:20px;padding-right:20px;width:100%;box-sizing:border-box}
 @media (min-width:360px){.page5 .content{top:20%}
 }
 .page5 .wave{position:absolute;top:0;width:10rem}
-.page6{background-image:url(http://jcqsscdn.ochase.com/remote/library2017/img/page6-tree.png);background-repeat:no-repeat;background-size:100%;background-position:top}
+.page6{background-image:url(/public/assets/remote//library2017/img/page6-tree.png);background-repeat:no-repeat;background-size:100%;background-position:top}
 .page6 .content{position:absolute;top:10%;width:100%}
 .page6 .content .line1,.page6 .content .line2{font-size:14px;font-weight:700;padding-left:1.6rem}
 .page6 .content .line3{font-size:14px;font-weight:700;text-align:center}
 .page6 .content .line3 span{font-size:64px;font-weight:700;line-height:1.5}
-.page7{background-image:url(http://jcqsscdn.ochase.com/remote/library2017/img/page7-bg.png);background-repeat:no-repeat;background-size:100%;background-position:top}
+.page7{background-image:url(/public/assets/remote//library2017/img/page7-bg.png);background-repeat:no-repeat;background-size:100%;background-position:top}
 .page7 .review{display:inline-block;position:absolute;left:1.49333rem;top:7.89333rem;width:3.54667rem;height:4.72rem}
 .page7 .share{display:inline-block;position:absolute;left:5.04rem;top:7.89333rem;width:3.54667rem;height:4.72rem}
-.page8{background-image:url(http://jcqsscdn.ochase.com/remote/library2017/img/page8-bg.png);background-repeat:no-repeat;background-size:100%;background-position:top}
+.page8{background-image:url(/public/assets/remote//library2017/img/page8-bg.png);background-repeat:no-repeat;background-size:100%;background-position:top}
 .page8 .content{position:absolute;top:17.7%;padding-left:20px;padding-right:20px;width:100%;box-sizing:border-box}
 @media (min-width:360px){.page8 .content{top:20%}
 }
 .page8 .circular{position:absolute;top:0;left:0;width:7.48rem}
-.page9{background-image:url(http://jcqsscdn.ochase.com/remote/library2017/img/page9-bg.png);background-repeat:no-repeat;background-size:100%;background-position:top}
+.page9{background-image:url(/public/assets/remote//library2017/img/page9-bg.png);background-repeat:no-repeat;background-size:100%;background-position:top}
 .page9 .content{position:absolute;top:17.7%;padding-left:20px;padding-right:20px;width:100%;box-sizing:border-box}
 .page9 .content p{color:#fff;text-shadow:#666 .1em .1em .2em}
 .page9 .content .c-stress{color:red}
 @media (min-width:360px){.page9 .content{top:20%}
 }
-.page10{background-image:url(http://jcqsscdn.ochase.com/remote/library2017/img/page10-bg.png);background-repeat:no-repeat;background-size:100%;background-position:top}
+.page10{background-image:url(/public/assets/remote//library2017/img/page10-bg.png);background-repeat:no-repeat;background-size:100%;background-position:top}
 .page10 .content{position:absolute;top:17.7%;padding-left:20px;padding-right:.53333rem;width:100%;box-sizing:border-box}
 @media (min-width:360px){.page10 .content{top:20%}
 }
@@ -56,7 +56,7 @@ to{-webkit-transform:rotate(360deg)}
 .page10 li{height:auto;line-height:.8rem;margin-top:.21333rem;box-sizing:border-box;font-size:15px}
 .page10 .label-name{font-size:15px;color:#fff;background-color:orange;padding:.10667rem .21333rem}
 .page10 .label-score{font-size:15px;color:#fff;background-color:red;padding:.10667rem .21333rem}
-.eggs{background-image:url(http://jcqsscdn.ochase.com/remote/library2017/img/page2-bg.png);background-repeat:no-repeat;background-size:100%;background-position:top}
+.eggs{background-image:url(/public/assets/remote//library2017/img/page2-bg.png);background-repeat:no-repeat;background-size:100%;background-position:top}
 .eggs .content{width:9.14667rem;box-sizing:border-box;margin:0 auto;padding-top:30px;padding-bottom:30px}
 .eggs .content .tips{padding:.42667rem;line-height:1.5;font-size:.42667rem;background-color:#fff;border-radius:5px}
 .eggs .content .card{width:100%;background-color:#fff;border-radius:5px}
